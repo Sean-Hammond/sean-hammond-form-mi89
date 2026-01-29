@@ -47,7 +47,7 @@
 
         <!-- One big row to contain the rest of the form except the footer -->
         <div class="row">
-          <!-- One big column -->
+          <!-- One big left column -->
           <div class="col-6 row">
             <!-- First name -->
             <label for="first-name" class="col-12">First Name</label>
@@ -65,13 +65,8 @@
             <!-- Card type -->
             <fieldset>
               <legend>We accept:</legend>
-                
-              <input
-                type="radio"
-                name="customer-credit-card-type"
-                id="visa"
-                
-              />
+
+              <input type="radio" name="customer-credit-card-type" id="visa" />
               <label name="customer-credit-card-type" value="visa" for="visa">
                 <i class="fa-brands fa-cc-visa"></i>
               </label>
@@ -79,34 +74,43 @@
                 type="radio"
                 name="customer-credit-card-type"
                 id="mastercard"
-                
               />
-              <label name="customer-credit-card-type" value="mastercard" for="mastercard">
+              <label
+                name="customer-credit-card-type"
+                value="mastercard"
+                for="mastercard"
+              >
                 <i class="fa-brands fa-cc-mastercard"></i>
               </label>
               <input
                 type="radio"
                 name="customer-credit-card-type"
                 id="discover"
-                
               />
-              <label name="customer-credit-card-type" value="discover" for="discover">
+              <label
+                name="customer-credit-card-type"
+                value="discover"
+                for="discover"
+              >
                 <i class="fa-brands fa-cc-discover"></i>
               </label>
-              <input
-                type="radio"
-                name="customer-credit-card-type"
-                id="amex"
-                
-              />
+              <input type="radio" name="customer-credit-card-type" id="amex" />
               <label name="customer-credit-card-type" value="amex" for="amex">
                 <i class="fa-brands fa-cc-discover"></i>
               </label>
             </fieldset>
           </div>
 
-          <!-- Another big column -->
-          <div class="col-6"></div>
+          <!-- One big right column -->
+          <div class="col-6 row">
+            <label for="last-name" class="col-12">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="customer-last-name"
+              class="col-12"
+            />
+          </div>
         </div>
       </div>
     </form>

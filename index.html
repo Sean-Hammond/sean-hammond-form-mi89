@@ -63,44 +63,46 @@
             <input type="text" name="customer-city" id="city" class="col-12" />
 
             <!-- Card type -->
-            <label for="card-type" class="col-12">We accept:</label>
-            <input
-              type="radio"
-              name="customer-credit-card-type"
-              id="card-type"
-              class="col-6"
-            />
-            <label name="customer-credit-card-type" value="visa">
-              <i class="fa-brands fa-cc-visa"></i>
-            </label>
-            <input
-              type="radio"
-              name="customer-credit-card-type"
-              id="card-type"
-              class="col-6"
-            />
-            <label name="customer-credit-card-type" value="mastercard">
-              <i class="fa-brands fa-cc-mastercard"></i>
-            </label>
-            <input
-              type="radio"
-              name="customer-credit-card-type"
-              id="card-type"
-              class="col-6"
-            />
-            <label name="customer-credit-card-type" value="discover">
-              <i class="fa-brands fa-cc-discover"></i>
-            </label>
-            <input
-              type="radio"
-              name="customer-credit-card-type"
-              id="card-type"
-              class="col-6"
-            />
-            <label name="customer-credit-card-type" value="amex">
-              <i class="fa-brands fa-cc-discover"></i>
-            </label>
-            
+            <fieldset>
+              <legend>We accept:</legend>
+                
+              <input
+                type="radio"
+                name="customer-credit-card-type"
+                id="visa"
+                
+              />
+              <label name="customer-credit-card-type" value="visa" for="visa">
+                <i class="fa-brands fa-cc-visa"></i>
+              </label>
+              <input
+                type="radio"
+                name="customer-credit-card-type"
+                id="mastercard"
+                
+              />
+              <label name="customer-credit-card-type" value="mastercard" for="mastercard">
+                <i class="fa-brands fa-cc-mastercard"></i>
+              </label>
+              <input
+                type="radio"
+                name="customer-credit-card-type"
+                id="discover"
+                
+              />
+              <label name="customer-credit-card-type" value="discover" for="discover">
+                <i class="fa-brands fa-cc-discover"></i>
+              </label>
+              <input
+                type="radio"
+                name="customer-credit-card-type"
+                id="amex"
+                
+              />
+              <label name="customer-credit-card-type" value="amex" for="amex">
+                <i class="fa-brands fa-cc-discover"></i>
+              </label>
+            </fieldset>
           </div>
 
           <!-- Another big column -->

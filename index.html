@@ -1,11 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Form Example</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="container border">
+      <h1 class="row bg-body-secondary">Payment form example</h1>
+      <p class="row bg-danger">Some fields are missing</p>
+      <div class="row">
+
+        <!-- Card number -->
+        <div class="col-5 row">
+            <label for="card-number" class="col-12">Card #</label>
+            <input type="number" name="card-number" id="card-number" class="col-12">
+        </div>
+
+        <!-- CVC -->
+        <div class="col-3 row">
+            <label for="cvc" class="col-12">CVC #</label>
+            <input type="number" name="cvc-number" id="cvc" class="col-12">
+        </div>
+        
+        <!-- Payment amount -->
+        <div class="col-4 row">
+            <label for="amount" class="col-12">Amount</label>
+            <input type="number" name="payment amount" id="amount" class="col-12">
+        </div>
+      </div>
+    </form>
+
+    <!-- Boostrap JS links: -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

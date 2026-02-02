@@ -1,6 +1,6 @@
 # Basic Form Styled with Bootsrap
 
-To try to improve my Boostrap skills, I made this HTML form trying to use more Bootstrap than CSS. I later created another version with almost no CSS (see my other repositories!).
+To try to improve my Boostrap skills, I tried to style this HTML form using almost entirely Bootstrap instead of CSS!
 
 ## How to View the Site
 

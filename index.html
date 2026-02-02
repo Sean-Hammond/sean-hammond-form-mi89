@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form class="container border">
-      <h1 class="row bg-body-secondary">Payment form example</h1>
-      <p class="row bg-danger">Some fields are missing</p>
-      <div class="row">
+    <form class="container border rounded-top-3">
+      <h1 class="row bg-body-secondary rounded-top-3 p-3">Payment form example</h1>
+      <p class="row bg-danger rounded-2 p-2 m-2">Some fields are missing</p>
+      <div class="row d-flex justify-content-between m-2">
         <!-- Card number -->
         <div class="col-5 row">
           <label for="card-number" class="col-12">Card #</label>
@@ -41,7 +41,7 @@
         </div>
 
         <!-- One big row to contain the rest of the form except the footer -->
-        <div class="row">
+        <div class="row d-flex justify-content-between mt-3">
           <!-- One big left column -->
           <div class="col-6 row">
             <!-- First name -->
@@ -102,7 +102,7 @@
           </div>
 
           <!-- One big right column -->
-          <div class="col-6 row">
+          <div class="col-6 row d-flex justify-content-between mt-3">
             <!-- Last name -->
             <label for="last-name" class="col-12">Last Name</label>
             <input
@@ -112,7 +112,7 @@
               class="col-12"
             />
             <!-- State -->
-            <div class="col-6 row">
+            <div class="col-6 row mt-3">
               <label for="state" class="col-12">State</label>
               <select name="customer-location-state" id="state" class="col-12">
                 <option value="">Pick a state</option>
@@ -126,7 +126,7 @@
             </div>
 
             <!-- Postal code -->
-            <div class="col-6 row">
+            <div class="col-6 row mt-3">
               <label for="postal-code" class="col-12">Postal Code</label>
               <input
                 type="text"
@@ -136,7 +136,7 @@
               />
             </div>
 
-            <div class="col-12 row">
+            <div class="col-12 row mt-3">
               <label for="message" class="col-12">Message</label>
               <input
                 type="text"

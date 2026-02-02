@@ -11,13 +11,23 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome: -->
+    <script
+      src="https://kit.fontawesome.com/0b77e7860d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <form class="container border rounded-top-3">
+      <!-- Form header and "fields are missing" message -->
       <h1 class="row bg-body-secondary rounded-top-3 p-3">
-        Payment form example
+        <div class="ps-2">Payment form example</div>
       </h1>
-      <p class="row bg-danger rounded-2 p-2 m-2">Some fields are missing</p>
+      <p class="row bg-danger-subtle rounded-2 p-2 m-2">
+        Some fields are missing
+      </p>
+
+      <!-- Container for rest of the form -->
       <div class="row d-flex justify-content-between m-2">
         <!-- Card number -->
         <div class="col-5 row">
@@ -133,15 +143,15 @@
           <!-- One big right column -->
           <div class="col-6 row d-flex justify-content-between mt-3">
             <!-- Last name -->
-            <label for="last-name" class="col-12">Last Name</label>
+            <label for="last-name" class="col-12 ms-4">Last Name</label>
             <input
               type="text"
               name="customer-last-name"
               id="last-name"
-              class="col-12"
+              class="col-12 ms-4"
             />
             <!-- State -->
-            <div class="col-6 row mt-3">
+            <div class="col-6 row mt-3 ms-4">
               <label for="state" class="col-12">State</label>
               <select name="customer-location-state" id="state" class="col-12">
                 <option value="">Pick a state</option>
@@ -156,17 +166,17 @@
 
             <!-- Postal code -->
             <div class="col-6 row mt-3">
-              <label for="postal-code" class="col-12">Postal Code</label>
+              <label for="postal-code" class="col-12 ms-3">Postal Code</label>
               <input
                 type="text"
                 name="customer-postal-code"
                 id="postal-code"
-                class="col-12"
+                class="col-12 ms-3"
               />
             </div>
 
             <!-- Message -->
-            <div class="col-12 row mt-3">
+            <div class="col-12 row mt-3 ms-4">
               <label for="message" class="col-12">Message</label>
               <input
                 type="text"
@@ -180,9 +190,17 @@
         </div>
 
         <!-- Form footer -->
-        <div class="col-10"></div>
-        <button type="button" class="btn btn-secondary col-1">Cancel</button>
-        <button type="submit" class="btn btn-primary col-1">Send</button>
+        <div class="col-10">
+          <!-- Spacer div -->
+        </div>
+        <div class="p-1 d-flex justify-content-end col-2">
+          <button type="button" class="btn btn-secondary w-50 rounded p-1 me-1">
+            Cancel
+          </button>
+          <button type="submit" class="btn btn-primary w-50 rounded p-1 ms-1">
+            Send
+          </button>
+        </div>
       </div>
     </form>
 
@@ -195,11 +213,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Font Awesome: -->
-    <script
-      src="https://kit.fontawesome.com/0b77e7860d.js"
       crossorigin="anonymous"
     ></script>
   </body>

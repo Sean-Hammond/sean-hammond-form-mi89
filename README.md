@@ -9,6 +9,9 @@ Since this is a very simple site, I might not have it deployed to view on the we
 ```bash
 $ pip3 install flask && python3 server.py
 ```
+## What I Learned
+
+In Bootstrap, sometimes it's easier to use a class of w-50 instead of wrapping into a row and giving a class of col-6. But w must be in increments of 25 (w-90 does not work).
 
 ### Contributors
 

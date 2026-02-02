@@ -14,7 +14,9 @@
   </head>
   <body>
     <form class="container border rounded-top-3">
-      <h1 class="row bg-body-secondary rounded-top-3 p-3">Payment form example</h1>
+      <h1 class="row bg-body-secondary rounded-top-3 p-3">
+        Payment form example
+      </h1>
       <p class="row bg-danger rounded-2 p-2 m-2">Some fields are missing</p>
       <div class="row d-flex justify-content-between m-2">
         <!-- Card number -->
@@ -63,41 +65,68 @@
             />
 
             <!-- Card type -->
-            <fieldset>
+            <fieldset class="mt-3">
               <legend>We accept:</legend>
-
-              <input type="radio" name="customer-credit-card-type" id="visa" />
-              <label name="customer-credit-card-type" value="visa" for="visa">
-                <i class="fa-brands fa-cc-visa"></i>
-              </label>
-              <input
-                type="radio"
-                name="customer-credit-card-type"
-                id="mastercard"
-              />
-              <label
-                name="customer-credit-card-type"
-                value="mastercard"
-                for="mastercard"
+              <div
+                class="bg-secondary text-light rounded-2 d-flex justify-content-between p-2"
               >
-                <i class="fa-brands fa-cc-mastercard"></i>
-              </label>
-              <input
-                type="radio"
-                name="customer-credit-card-type"
-                id="discover"
-              />
-              <label
-                name="customer-credit-card-type"
-                value="discover"
-                for="discover"
-              >
-                <i class="fa-brands fa-cc-discover"></i>
-              </label>
-              <input type="radio" name="customer-credit-card-type" id="amex" />
-              <label name="customer-credit-card-type" value="amex" for="amex">
-                <i class="fa-brands fa-cc-discover"></i>
-              </label>
+                <div>
+                  <input
+                    type="radio"
+                    name="customer-credit-card-type"
+                    id="visa"
+                  />
+                  <label
+                    name="customer-credit-card-type"
+                    value="visa"
+                    for="visa"
+                  >
+                    <i class="fa-brands fa-cc-visa"></i>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="customer-credit-card-type"
+                    id="mastercard"
+                  />
+                  <label
+                    name="customer-credit-card-type"
+                    value="mastercard"
+                    for="mastercard"
+                  >
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="customer-credit-card-type"
+                    id="discover"
+                  />
+                  <label
+                    name="customer-credit-card-type"
+                    value="discover"
+                    for="discover"
+                  >
+                    <i class="fa-brands fa-cc-discover"></i>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="customer-credit-card-type"
+                    id="amex"
+                  />
+                  <label
+                    name="customer-credit-card-type"
+                    value="amex"
+                    for="amex"
+                  >
+                    <i class="fa-brands fa-cc-discover"></i>
+                  </label>
+                </div>
+              </div>
             </fieldset>
           </div>
 
@@ -136,6 +165,7 @@
               />
             </div>
 
+            <!-- Message -->
             <div class="col-12 row mt-3">
               <label for="message" class="col-12">Message</label>
               <input

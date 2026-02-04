@@ -18,7 +18,7 @@
     ></script>
   </head>
   <body>
-    <form class="container border rounded-top-3">
+    <form class="container border rounded-top-3 mt-3">
       <!-- Form header and "fields are missing" message -->
       <h1 class="row bg-body-secondary rounded-top-3 p-3">
         <div class="ps-2">Payment form example</div>
@@ -30,48 +30,48 @@
       <!-- Container for rest of the form -->
       <div class="row d-flex justify-content-between m-2">
         <!-- Card number -->
-        <div class="col-5 row">
-          <label for="card-number" class="col-12">Card #</label>
+        <div class="col-5 px-3">
+          <label for="card-number" class="w-100">Card #</label>
           <input
             type="text"
             name="card-number"
             id="card-number"
-            class="col-12"
+            class="w-100"
           />
         </div>
 
         <!-- CVC -->
-        <div class="col-3 row">
-          <label for="cvc" class="col-12">CVC #</label>
-          <input type="text" name="cvc-number" id="cvc" class="col-12" />
+        <div class="col-3 px-3">
+          <label for="cvc" class="w-100">CVC #</label>
+          <input type="text" name="cvc-number" id="cvc" class="w-100" />
         </div>
 
         <!-- Payment amount -->
-        <div class="col-4 row">
-          <label for="amount" class="col-12">Amount</label>
-          <input type="text" name="payment amount" id="amount" class="col-12" />
+        <div class="col-4 px-3">
+          <label for="amount" class="w-100">Amount</label>
+          <input type="text" name="payment amount" id="amount" class="w-100" />
         </div>
 
         <!-- One big row to contain the rest of the form except the footer -->
-        <div class="row d-flex justify-content-between mt-3">
+        <div class="row d-flex justify-content-between mt-3 px-3">
           <!-- One big left column -->
-          <div class="col-6 row">
+          <div class="col-6">
             <!-- First name -->
-            <label for="first-name" class="col-12">First Name</label>
+            <label for="first-name" class="w-100">First Name</label>
             <input
               type="text"
               name="customer-first-name"
               id="first-name"
-              class="col-12"
+              class="w-100"
             />
 
             <!-- City -->
-            <label for="city" class="col-12">City</label>
+            <label for="city" class="w-100">City</label>
             <input
               type="text"
               name="customer-location-city"
               id="city"
-              class="col-12"
+              class="w-100"
             />
 
             <!-- Card type -->
@@ -141,15 +141,16 @@
           </div>
 
           <!-- One big right column -->
-          <div class="col-6 row d-flex justify-content-between mt-3">
+          <div class="col-6 row d-flex justify-content-between mt-3 px-3">
             <!-- Last name -->
-            <label for="last-name" class="col-12 ms-4">Last Name</label>
+            <label for="last-name" class="w-100 ms-4">Last Name</label>
             <input
               type="text"
               name="customer-last-name"
               id="last-name"
-              class="col-12 ms-4"
+              class="w-100 ms-4"
             />
+
             <!-- State -->
             <div class="col-6 row mt-3 ms-4">
               <label for="state" class="col-12">State</label>
@@ -176,7 +177,7 @@
             </div>
 
             <!-- Message -->
-            <div class="col-12 row mt-3 ms-4">
+            <div class="w-100 row mt-3 ms-4">
               <label for="message" class="col-12">Message</label>
               <input
                 type="text"
@@ -190,19 +191,30 @@
         </div>
 
         <!-- Form footer -->
-        <div class="col-10">
-          <!-- Spacer div -->
-        </div>
-        <div class="p-1 d-flex justify-content-end col-2">
-          <button type="button" class="btn btn-secondary w-50 rounded p-1 me-1">
-            Cancel
-          </button>
-          <button type="submit" class="btn btn-primary w-50 rounded p-1 ms-1">
-            Send
-          </button>
+        <div class="row py-1">
+          <div class="col-10">
+            <!-- Spacer div -->
+          </div>
+          <div class="p-1 d-flex justify-content-end col-2">
+            <button
+              type="button"
+              class="btn btn-secondary w-50 rounded p-1 me-1"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary w-50 rounded p-1 ms-1">
+              Send
+            </button>
+          </div>
         </div>
       </div>
     </form>
+
+    <!-- In case I need to change later, below is instructor's feedback: -->
+    <!-- These two elements should be in one row while also surounded by there own divs <div class=row> <div class="col-6"> <label></label> <select></select> </div> <div class="col-6"> <label></label> <input /> </div> </div> This structure will get them side by side and structured -->
+    <!-- the select class can take form-select to make it looks nicer, also same idea with the other inputs where you can remove the row and add a w-100
+
+ -->
 
     <!-- Boostrap JS links: -->
     <script
